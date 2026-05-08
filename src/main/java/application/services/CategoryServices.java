@@ -15,11 +15,11 @@ public class CategoryServices {
     @Autowired
     private CategoryRepository CategoryRepository;
 
-    public List<Category> findAll(){
+    public List<Category> findAll() {
         return CategoryRepository.findAll();
     }
 
-    public Category findById(Long id){
+    public Category findById(Long id) {
         Optional<Category> obj = CategoryRepository.findById(id);
         return obj.get();
     }

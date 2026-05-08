@@ -14,24 +14,24 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name = "tb_category")
-public class Category implements Serializable{
+@Table(name = "tb_category")
+public class Category implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
 
     @JsonIgnore
     @ManyToMany(mappedBy = "categories")
     private Set<Product> products = new HashSet<>();
-    
-    public Category(){
+
+    public Category() {
     }
 
-    public Category (Integer id, String name){
+    public Category(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -87,7 +87,4 @@ public class Category implements Serializable{
         return true;
     }
 
-    
-
-    
 }
