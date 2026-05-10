@@ -1,4 +1,4 @@
-package application.Resource;
+package application.resource;
 
 import java.util.List;
 import application.services.OrderServices;

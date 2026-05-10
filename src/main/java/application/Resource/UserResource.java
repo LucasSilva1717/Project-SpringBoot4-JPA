@@ -1,4 +1,4 @@
-package application.Resource;
+package application.resource;
 
 import java.net.URI;
 import java.util.List;

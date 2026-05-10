@@ -1,4 +1,4 @@
-package application.Config;
+package application.config;
 
 import java.time.Instant;
 import java.util.Arrays;
@@ -8,11 +8,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import application.Repositories.CategoryRepository;
-import application.Repositories.OrderItemRepository;
-import application.Repositories.OrderRepository;
-import application.Repositories.ProductRepository;
-import application.Repositories.UserRepository;
 import application.entities.Category;
 import application.entities.Order;
 import application.entities.OrderItem;
@@ -20,6 +15,11 @@ import application.entities.Payment;
 import application.entities.Product;
 import application.entities.User;
 import application.entities.enums.OrderStatus;
+import application.repositories.CategoryRepository;
+import application.repositories.OrderItemRepository;
+import application.repositories.OrderRepository;
+import application.repositories.ProductRepository;
+import application.repositories.UserRepository;
 
 @Configuration
 @Profile("test")

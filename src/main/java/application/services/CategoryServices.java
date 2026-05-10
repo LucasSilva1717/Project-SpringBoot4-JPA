@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import application.Repositories.CategoryRepository;
 import application.entities.Category;
+import application.repositories.CategoryRepository;
 
 @Service
 public class CategoryServices {
